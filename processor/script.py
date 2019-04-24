@@ -2,7 +2,9 @@
 import spacy
 import re
 import os
-from Paragraph import Paragraph
+
+from processor.Paragraph import Paragraph
+
 
 def split_doc(file_name):
     word_dict = {}
@@ -21,7 +23,7 @@ def split_doc(file_name):
         
 
 if __name__ == '__main__':
-    paragraphs = split_doc('./CISI_small.ALLnettoye')
+    paragraphs = split_doc('../corpus/CISI_small.ALLnettoye')
     try:
         nlp = spacy.load("en_core_web_sm")
     except:
