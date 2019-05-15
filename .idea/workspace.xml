@@ -4,9 +4,8 @@
     <list default="true" id="4ab6dd0b-687d-471e-a69a-cc32b22be087" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/corpus/CISI_small.ALLnettoye" beforeDir="false" afterPath="$PROJECT_DIR$/corpus/CISI_small.ALLnettoye" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/processor/Paragraph.py" beforeDir="false" afterPath="$PROJECT_DIR$/processor/Paragraph.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/processor/script.py" beforeDir="false" afterPath="$PROJECT_DIR$/processor/Main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/processor/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/processor/Main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/data.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,8 +21,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/processor/Main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="757">
-              <caret line="61" column="41" selection-start-line="61" selection-start-column="41" selection-end-line="62" selection-end-column="44" />
+            <state relative-caret-position="224">
+              <caret line="88" column="12" selection-start-line="88" selection-start-column="12" selection-end-line="88" selection-end-column="12" />
               <folding>
                 <element signature="e#19#31#0" expanded="true" />
               </folding>
@@ -32,10 +31,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/codecs.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="244">
+              <caret line="310" selection-start-line="310" selection-end-line="310" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/results/data.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1122">
-              <caret column="266144" selection-start-column="266139" selection-end-column="266144" />
+            <state>
+              <caret column="2191" selection-start-column="2191" selection-end-column="2191" />
             </state>
           </provider>
         </entry>
@@ -43,8 +51,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/corpus/CISI_dev.REL">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="49" selection-end-column="24" />
+            <state relative-caret-position="210">
+              <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -57,8 +65,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/corpus/CISI_small.ALLnettoye">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2055">
-              <caret line="137" column="33" selection-start-line="137" selection-start-column="33" selection-end-line="137" selection-end-column="33" />
+            <state relative-caret-position="60">
+              <caret line="4" column="59" selection-start-line="4" selection-start-column="52" selection-end-line="4" selection-end-column="59" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/corpus/CISI.ALLnettoye">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="305760">
+              <caret line="20384" column="49" selection-start-line="20384" selection-start-column="49" selection-end-line="20384" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -76,8 +93,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="210">
-                <caret line="14" selection-start-line="14" selection-end-line="14" />
+              <first_editor relative-caret-position="123">
+                <caret line="61" column="16" lean-forward="true" selection-start-line="61" selection-start-column="16" selection-end-line="61" selection-end-column="16" />
               </first_editor>
               <second_editor />
             </state>
@@ -102,6 +119,8 @@
       <find>topic</find>
       <find>acquisition</find>
       <find>professional</find>
+      <find>history</find>
+      <find>edition</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -114,18 +133,17 @@
         <option value="$PROJECT_DIR$/script.py" />
         <option value="$PROJECT_DIR$/processor/script.py" />
         <option value="$PROJECT_DIR$/corpus/CISI_small.ALLnettoye" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/processor/Paragraph.py" />
         <option value="$PROJECT_DIR$/results/data.json" />
+        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/processor/Main.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="180" />
-    <option name="y" value="123" />
-    <option name="width" value="1080" />
-    <option name="height" value="600" />
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="877" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -266,44 +284,59 @@
       <workItem from="1557665988903" duration="53000" />
       <workItem from="1557735274185" duration="22000" />
       <workItem from="1557833114932" duration="987000" />
+      <workItem from="1557837291673" duration="662000" />
+      <workItem from="1557838838725" duration="274000" />
+      <workItem from="1557859620207" duration="3040000" />
+      <workItem from="1557919362979" duration="2297000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29266000" />
+    <option name="totallyTimeSpent" value="35539000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="797" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13519314" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14091559" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32908705" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3328446" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.18768328" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.40469208" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.11730205" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32982457" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5005325" side_tool="true" weight="0.32865497" />
-      <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.49946752" weight="0.18471338" />
+      <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.49946752" weight="0.17741935" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="right" id="SciView" order="4" />
+      <window_info anchor="right" id="SciView" order="4" weight="0.32960597" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/processor/Main.py</url>
+          <line>91</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/NLP$script__1_.coverage" NAME="script (1) Coverage Results" MODIFIED="1557833608680" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/processor" />
+    <SUITE FILE_PATH="coverage/NLP$script__1_.coverage" NAME="script (1) Coverage Results" MODIFIED="1557921637660" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/processor" />
     <SUITE FILE_PATH="coverage/NLP$script.coverage" NAME="script Coverage Results" MODIFIED="1556088771258" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="editorHistoryManager">
@@ -328,13 +361,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/codecs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="308" selection-start-line="308" selection-end-line="308" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/json/encoder.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-213">
@@ -349,27 +375,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/corpus/CISI.ALLnettoye">
+    <entry file="file://$PROJECT_DIR$/processor/eval.pl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1698">
-          <caret line="20384" column="49" lean-forward="true" selection-start-line="20384" selection-start-column="49" selection-end-line="20384" selection-end-column="49" />
+        <state relative-caret-position="120">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/corpus/CISI_dev.REL">
+    <entry file="file://$PROJECT_DIR$/results/data.json">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret selection-end-line="49" selection-end-column="24" />
+          <caret column="2191" selection-start-column="2191" selection-end-column="2191" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/corpus/CISI_dev.QRY">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/corpus/CISI_small.ALLnettoye">
+    <entry file="file://$PROJECT_DIR$/corpus/CISI.ALLnettoye">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2055">
-          <caret line="137" column="33" selection-start-line="137" selection-start-column="33" selection-end-line="137" selection-end-column="33" />
+        <state relative-caret-position="305760">
+          <caret line="20384" column="49" selection-start-line="20384" selection-start-column="49" selection-end-line="20384" selection-end-column="49" />
         </state>
       </provider>
     </entry>
@@ -380,27 +403,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/corpus/CISI_small.ALLnettoye">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="59" selection-start-line="4" selection-start-column="52" selection-end-line="4" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="210">
-            <caret line="14" selection-start-line="14" selection-end-line="14" />
+          <first_editor relative-caret-position="123">
+            <caret line="61" column="16" lean-forward="true" selection-start-line="61" selection-start-column="16" selection-end-line="61" selection-end-column="16" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/results/data.json">
+    <entry file="file://$PROJECT_DIR$/corpus/CISI_dev.REL">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1122">
-          <caret column="266144" selection-start-column="266139" selection-end-column="266144" />
+        <state relative-caret-position="210">
+          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/corpus/CISI_dev.QRY">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/codecs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="310" selection-start-line="310" selection-end-line="310" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/processor/Main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="757">
-          <caret line="61" column="41" selection-start-line="61" selection-start-column="41" selection-end-line="62" selection-end-column="44" />
+        <state relative-caret-position="224">
+          <caret line="88" column="12" selection-start-line="88" selection-start-column="12" selection-end-line="88" selection-end-column="12" />
           <folding>
             <element signature="e#19#31#0" expanded="true" />
           </folding>
