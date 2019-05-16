@@ -53,15 +53,14 @@ def extract_topn_from_vector(feature_names, sorted_items, topn=10):
 
 if __name__ == '__main__':
     nlp = spacy.load("en_core_web_sm")
-    paragraphs = split_doc('../corpus/CISI.ALLnettoye')
+    qry = split_doc('../corpus/CISI_dev.QRY')
     docs = []
-    for p in paragraphs:
-        # print('\n\n*************** Paragraph ' + str(p) + ' ***************')
-        paragraphs[p].generate_model()
-        paragraphs[p].filter_stop_words()
-        docs.append(paragraphs[p].filtered)
-        # print(paragraphs[p].filtered)
-
+    for q in qry:
+        qry[q].generate_model()
+        qry[q].filter_stop_words()
+        docs.append(qry[q].filtered)
+        print(qry[q].body, "\n\n\n")
+"""
     cv = CountVectorizer(max_df=0.85, max_features=MAX_FEATURES)
     word_count_vector = cv.fit_transform(docs)
     # print(word_count_vector.shape)
@@ -80,18 +79,19 @@ if __name__ == '__main__':
         # print("====Paragraph ", str(i), "====")
         for k in keywords:
             # print(k, " ", keywords[k])
-            p = (i, keywords[k])
+            q = (i, keywords[k])
             if k in keyword_dict.keys():
-                keyword_dict[k].append(p)
+                keyword_dict[k].append(q)
             else:
-                keyword_dict[k] = [p]
+                keyword_dict[k] = [q]
 
-    # for key in keyword_dict:
-    #     print(key, " : ", keyword_dict[key])
+    for key in keyword_dict:
+        print(key, " : ", keyword_dict[key])
 
     idf_dict_str = json.dumps(keyword_dict)
-    # print(idf_dict_str)
+    print(idf_dict_str)
 
     my_file = open('../results/results.json', 'w')
     my_file.write(idf_dict_str)
     my_file.close()
+"""
