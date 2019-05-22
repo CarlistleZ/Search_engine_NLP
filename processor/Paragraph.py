@@ -7,6 +7,7 @@ class Paragraph:
         self.title, self.body = Paragraph.process_text(text)
         self.model = None
         self.filtered = ""
+        self.qry_vect = {}
 
     @staticmethod
     def process_text(text):
@@ -30,3 +31,18 @@ class Paragraph:
                 filtered_sent.append(word.lemma_.lower().strip())
         self.filtered = " ".join(filtered_sent)
         # bow_vector = CountVectorizer(tokenizer = spacy_tokenizer, ngram_range=(1,1))   bag of words
+
+    def generate_vect(self):
+        words = self.filtered.split(" ")
+        print("Filtered: ", self.filtered)
+        # max_freq = -1
+        for word in words:
+            if word in self.qry_vect.keys():
+                self.qry_vect[word] += 1
+                # if self.qry_vect[word] > max_freq:
+                #     max_freq = self.qry_vect[word]
+            else:
+                self.qry_vect[word] = 1
+        # for vec in self.qry_vect.keys():
+        #     self.qry_vect[vec] = self.qry_vect[vec] / max_freq
+        print(self.qry_vect)

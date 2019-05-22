@@ -14,6 +14,8 @@ http://kavita-ganesan.com/tfidftransformer-tfidfvectorizer-usage-differences/#.X
 https://nlp.stanford.edu/IR-book/html/htmledition/inverse-document-frequency-1.html
 
 
+http://blog.christianperone.com/2013/09/machine-learning-cosine-similarity-for-vector-space-models-part-iii/
+
 
 Result of the 1st paragraph from the entire corpus
 
