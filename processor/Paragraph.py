@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+import math
+
 import spacy
 nlp = spacy.load("en_core_web_sm")
 
@@ -34,7 +36,7 @@ class Paragraph:
 
     def generate_vect(self):
         words = self.filtered.split(" ")
-        print("Filtered: ", self.filtered)
+        # print("Filtered: ", self.filtered)
         # max_freq = -1
         for word in words:
             if word in self.qry_vect.keys():
@@ -43,6 +45,10 @@ class Paragraph:
                 #     max_freq = self.qry_vect[word]
             else:
                 self.qry_vect[word] = 1
-        # for vec in self.qry_vect.keys():
-        #     self.qry_vect[vec] = self.qry_vect[vec] / max_freq
-        print(self.qry_vect)
+        sum_sq = 0
+        for vec in self.qry_vect.keys():
+            sum_sq += self.qry_vect[vec] * self.qry_vect[vec]
+        sq = math.sqrt(sum_sq)
+        for vec in self.qry_vect.keys():
+            self.qry_vect[vec] = self.qry_vect[vec] / sq
+        # print(self.qry_vect)
