@@ -36,25 +36,32 @@ if __name__ == '__main__':
         # print("Filtered: ", qry[q].filtered, "\n\n\n")
         qry[q].generate_vect()
 
-    qry_idx = 5
-    tfidf_vect = json.loads(open("../results/results.json", "r").read())
+    vec_json_file = open("../results/inv_vector.json", "r")
+    tfidf_vect = json.loads(vec_json_file.read())
+    vec_json_file.close()
+    output_file = open("../results/result.REL", "w+")
     res_dict = {}
-    qurey = qry[qry_idx]
-    for kwd in qurey.qry_vect.keys():
-        if kwd in tfidf_vect.keys():
-            for doc_num, doc_score in tfidf_vect[kwd]:
-                if doc_num in res_dict.keys():
-                    res_dict[doc_num] += qurey.qry_vect[kwd] * doc_score
-                else:
-                    res_dict[doc_num] = qurey.qry_vect[kwd] * doc_score
+    for qry_idx in range(1, len(qry) + 1):
+        qurey = qry[qry_idx]
+        for kwd in qurey.qry_vect.keys():
+            if kwd in tfidf_vect.keys():
+                # print("Keyword: ", kwd)
+                # print("tfidf vector: ", str(tfidf_vect[kwd]))
+                for doc_num, doc_score in tfidf_vect[kwd]:
+                    # print("Doc num: ", str(doc_num), " doc score: ", str(doc_score))
+                    if doc_num in res_dict.keys():
+                        res_dict[doc_num] += qurey.qry_vect[kwd] * doc_score
+                    else:
+                        res_dict[doc_num] = qurey.qry_vect[kwd] * doc_score
 
-    sorted_x = sorted(res_dict.items(), key=operator.itemgetter(1))
-    sorted_dict = collections.OrderedDict(sorted_x)
-    print(sorted_dict.keys())
-    # qurey.qry_vect    tfidf_vect
+        sorted_res_dict = sorted(res_dict.items(), key=operator.itemgetter(1), reverse=True)
+        # print("Query", qry_idx, "\n", sorted_res_dict, "\n\n\n\n")
+        for doc_freq_tuple in sorted_res_dict:
+            str_to_write = str(qry_idx) + " " + str(doc_freq_tuple[0]) + " " + str(doc_freq_tuple[1]) + "\n"
+            output_file.write(str_to_write)
+    output_file.close()
 
-    # for keyword in qurey.qry_vect.keys():
-    #     if keyword in tfidf_vect.keys():
-    #         pass
+
+
 
 

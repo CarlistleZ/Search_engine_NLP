@@ -92,6 +92,6 @@ if __name__ == '__main__':
     idf_dict_str = json.dumps(keyword_dict)
     # print(idf_dict_str)
 
-    my_file = open('../results/results.json', 'w')
+    my_file = open('../results/inv_vector.json', 'w')
     my_file.write(idf_dict_str)
     my_file.close()
