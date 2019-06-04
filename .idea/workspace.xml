@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4ab6dd0b-687d-471e-a69a-cc32b22be087" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/processor/exe_eval.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/processor/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/processor/Main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/processor/Query.py" beforeDir="false" afterPath="$PROJECT_DIR$/processor/Query.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/results.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/inv_vector.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/inv_vector.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/result.REL" beforeDir="false" afterPath="$PROJECT_DIR$/results/result.REL" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,11 +20,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/processor/Main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
-              <caret line="51" column="18" selection-start-line="51" selection-start-column="18" selection-end-line="51" selection-end-column="18" />
+            <state relative-caret-position="-958">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
               <folding>
                 <element signature="e#19#31#0" expanded="true" />
               </folding>
@@ -31,10 +33,34 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/processor/Query.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="579">
+              <caret line="53" column="33" lean-forward="true" selection-start-line="53" selection-start-column="33" selection-end-line="53" selection-end-column="34" />
+              <folding>
+                <element signature="e#19#30#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/processor/Paragraph.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="291">
+              <caret line="38" column="40" selection-start-line="38" selection-start-column="40" selection-end-line="38" selection-end-column="40" />
+              <folding>
+                <element signature="e#19#30#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/corpus/CISI_dev.QRY">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="47" column="2" selection-start-line="47" selection-start-column="2" selection-end-line="47" selection-end-column="2" />
+            <state relative-caret-position="238">
+              <caret line="48" selection-start-line="48" selection-end-line="48" selection-end-column="54" />
             </state>
           </provider>
         </entry>
@@ -42,29 +68,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/corpus/CISI_dev.REL">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1648">
-              <caret line="110" column="13" selection-start-line="110" selection-start-column="13" selection-end-line="110" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/processor/eval.pl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4">
-              <caret line="5" column="14" lean-forward="true" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+            <state relative-caret-position="114">
+              <caret line="193" column="8" selection-start-line="193" selection-start-column="4" selection-end-line="193" selection-end-column="8" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/processor/Query.py">
+        <entry file="file://$PROJECT_DIR$/corpus/CISI.ALLnettoye">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="550">
-              <caret line="41" column="41" selection-start-line="41" selection-start-column="41" selection-end-line="41" selection-end-column="41" />
-              <folding>
-                <element signature="e#19#37#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="308">
+              <caret line="33" column="4" lean-forward="true" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -72,18 +86,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/results/result.REL">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-68122" />
+            <state relative-caret-position="4695">
+              <caret line="315" column="9" selection-start-line="315" selection-start-column="9" selection-end-line="315" selection-end-column="9" />
+            </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/processor/Paragraph.py">
+        <entry file="file://$PROJECT_DIR$/processor/exe_eval.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="780">
-              <caret line="54" selection-start-line="54" selection-end-line="54" />
-              <folding>
-                <element signature="e#19#30#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="15">
+              <caret line="1" column="51" selection-start-line="1" selection-start-column="45" selection-end-line="1" selection-end-column="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/results/inv_vector.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="430">
+              <caret column="17943" selection-start-column="17943" selection-end-column="17943" />
             </state>
           </provider>
         </entry>
@@ -99,13 +121,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>267</find>
-      <find>punctuation</find>
-      <find>centra</find>
-      <find>topic</find>
-      <find>acquisition</find>
-      <find>professional</find>
-      <find>control</find>
       <find>ddc</find>
       <find>keyword_list</find>
       <find>visit</find>
@@ -116,11 +131,26 @@
       <find>histo</find>
       <find>work</find>
       <find>general</find>
-      <find>edition</find>
       <find>library</find>
       <find>problem</find>
       <find>stud</find>
       <find>paragraphs</find>
+      <find>MAX_F</find>
+      <find>possi</find>
+      <find>possibili</find>
+      <find>communication</find>
+      <find>communica</find>
+      <find>human</find>
+      <find>1077</find>
+      <find>312</find>
+      <find>information</find>
+      <find>edition</find>
+      <find>459</find>
+      <find>986</find>
+      <find>num:  2</find>
+      <find>num:  2</find>
+      <find>Doc num:  2</find>
+      <find>1055</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -136,15 +166,16 @@
         <option value="$PROJECT_DIR$/results/data.json" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/processor/Paragraph.py" />
+        <option value="$PROJECT_DIR$/processor/exe_eval.sh" />
         <option value="$PROJECT_DIR$/processor/Main.py" />
+        <option value="$PROJECT_DIR$/corpus/CISI.ALLnettoye" />
         <option value="$PROJECT_DIR$/processor/Query.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="23" />
-    <option name="width" value="1080" />
-    <option name="height" value="605" />
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -154,7 +185,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -185,6 +215,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -321,12 +352,20 @@
       <workItem from="1558524671142" duration="6248000" />
       <workItem from="1558541073290" duration="13000" />
       <workItem from="1558616673119" duration="2489000" />
-      <workItem from="1558633533915" duration="3411000" />
+      <workItem from="1558633533915" duration="3880000" />
+      <workItem from="1558696773947" duration="1031000" />
+      <workItem from="1558698209057" duration="659000" />
+      <workItem from="1558791755875" duration="24000" />
+      <workItem from="1558808438859" duration="5802000" />
+      <workItem from="1558820213455" duration="289000" />
+      <workItem from="1558880591533" duration="18000" />
+      <workItem from="1559652584482" duration="1421000" />
+      <workItem from="1559654201474" duration="4865000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58040000" />
+    <option name="totallyTimeSpent" value="72618000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -338,22 +377,23 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="804" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="806" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13090129" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14020029" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32908705" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.16690856" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.35413644" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.70767003" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.29667148" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.19593614" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.90711176" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5005325" side_tool="true" weight="0.32865497" />
-      <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.49946752" weight="0.17561683" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.3299566" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5005325" side_tool="true" weight="0.32865497" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.21273516" />
+      <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.49946752" weight="0.17348203" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -363,20 +403,20 @@
       <window_info anchor="right" id="SciView" order="4" weight="0.32960597" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1602289" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14091559" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32908705" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.23913044" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3586207" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.24457309" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.35402298" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.19593614" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32982457" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5005325" side_tool="true" weight="0.32865497" />
-      <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.49946752" weight="0.35043988" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5005325" side_tool="true" weight="0.32865497" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.21852387" />
+      <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.49946752" weight="0.17471264" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -394,16 +434,65 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/processor/Main.py</url>
-          <line>75</line>
+          <line>76</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/processor/Query.py</url>
+          <line>46</line>
+          <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/NLP$Query.coverage" NAME="Query Coverage Results" MODIFIED="1558636876574" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/processor" />
-    <SUITE FILE_PATH="coverage/NLP$script__1_.coverage" NAME="script (1) Coverage Results" MODIFIED="1558636808396" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/processor" />
+    <SUITE FILE_PATH="coverage/NLP$Query.coverage" NAME="Query Coverage Results" MODIFIED="1559658791241" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/processor" />
+    <SUITE FILE_PATH="coverage/NLP$script__1_.coverage" NAME="script (1) Coverage Results" MODIFIED="1558809780368" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/processor" />
     <SUITE FILE_PATH="coverage/NLP$script.coverage" NAME="script Coverage Results" MODIFIED="1556088771258" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>qurey.qry_vect[kwd] * doc_score</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>doc_score</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>tfidf_vect[kwd] * doc_score</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>tfidf_vect[kwd]</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>kwd</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>qurey.qry_vect[kwd]</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>qurey.qry_vect</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>res_dict</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/../Python/lib/python3.6/site-packages/spacy/language.py">
@@ -457,34 +546,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/results.json" />
     <entry file="file://$PROJECT_DIR$/results/data.json" />
-    <entry file="file://$PROJECT_DIR$/results/results.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="769" selection-start-column="769" selection-end-column="769" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/results/results.json" />
     <entry file="file://$PROJECT_DIR$/corpus/CISI_small.ALLnettoye">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="4" selection-start-column="4" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/corpus/CISI.ALLnettoye">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306285">
-          <caret line="20419" column="10" selection-start-line="20419" selection-start-column="10" selection-end-line="20419" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/processor/Paragraph.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="54" selection-start-line="54" selection-end-line="54" />
-          <folding>
-            <element signature="e#19#30#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -498,59 +564,83 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/results/output.REL">
+    <entry file="file://$PROJECT_DIR$/results/output.REL" />
+    <entry file="file://$PROJECT_DIR$/processor/eval.pl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-650316" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/corpus/CISI_dev.REL">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1648">
-          <caret line="110" column="13" selection-start-line="110" selection-start-column="13" selection-end-line="110" selection-end-column="13" />
+        <state relative-caret-position="375">
+          <caret line="25" column="33" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/corpus/CISI_dev.QRY">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="47" column="2" selection-start-line="47" selection-start-column="2" selection-end-line="47" selection-end-column="2" />
+        <state relative-caret-position="238">
+          <caret line="48" selection-start-line="48" selection-end-line="48" selection-end-column="54" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/results/inv_vector.json">
+    <entry file="file://$PROJECT_DIR$/corpus/CISI_dev.REL">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/processor/Main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="51" column="18" selection-start-line="51" selection-start-column="18" selection-end-line="51" selection-end-column="18" />
-          <folding>
-            <element signature="e#19#31#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="114">
+          <caret line="193" column="8" selection-start-line="193" selection-start-column="4" selection-end-line="193" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/processor/Query.py">
+    <entry file="file://$PROJECT_DIR$/processor/exe_eval.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="41" column="41" selection-start-line="41" selection-start-column="41" selection-end-line="41" selection-end-column="41" />
-          <folding>
-            <element signature="e#19#37#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="15">
+          <caret line="1" column="51" selection-start-line="1" selection-start-column="45" selection-end-line="1" selection-end-column="51" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/results/result.REL">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-68122" />
+        <state relative-caret-position="4695">
+          <caret line="315" column="9" selection-start-line="315" selection-start-column="9" selection-end-line="315" selection-end-column="9" />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/processor/eval.pl">
+    <entry file="file://$PROJECT_DIR$/processor/Paragraph.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4">
-          <caret line="5" column="14" lean-forward="true" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+        <state relative-caret-position="291">
+          <caret line="38" column="40" selection-start-line="38" selection-start-column="40" selection-end-line="38" selection-end-column="40" />
+          <folding>
+            <element signature="e#19#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/corpus/CISI.ALLnettoye">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="33" column="4" lean-forward="true" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/results/inv_vector.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="430">
+          <caret column="17943" selection-start-column="17943" selection-end-column="17943" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/processor/Query.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="579">
+          <caret line="53" column="33" lean-forward="true" selection-start-line="53" selection-start-column="33" selection-end-line="53" selection-end-column="34" />
+          <folding>
+            <element signature="e#19#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/processor/Main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-958">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#19#31#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

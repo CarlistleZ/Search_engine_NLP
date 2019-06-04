@@ -7,6 +7,7 @@ from sklearn.feature_extraction.text import TfidfTransformer
 from processor.Paragraph import Paragraph
 
 MAX_FEATURES = 10000
+MAX_DF = 0.85
 
 def split_doc(file_name):
     word_dict = {}
@@ -62,7 +63,7 @@ if __name__ == '__main__':
         docs.append(paragraphs[p].filtered)
         # print(paragraphs[p].filtered)
 
-    cv = CountVectorizer(max_df=0.85, max_features=MAX_FEATURES)
+    cv = CountVectorizer(max_df=MAX_DF, max_features=MAX_FEATURES)
     word_count_vector = cv.fit_transform(docs)
     # print(word_count_vector.shape)
     keyword_list = list(cv.vocabulary_.keys())
@@ -80,7 +81,7 @@ if __name__ == '__main__':
         # print("====Paragraph ", str(i), "====")
         for k in keywords:
             # print(k, " ", keywords[k])
-            p = (i, keywords[k])
+            p = (i + 1, keywords[k])
             if k in keyword_dict.keys():
                 keyword_dict[k].append(p)
             else:
