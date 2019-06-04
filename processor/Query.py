@@ -3,9 +3,13 @@ import json
 import operator
 import spacy
 import re
+from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.feature_extraction.text import TfidfTransformer
 from processor.Paragraph import Paragraph
 
-MAX_OUTPUT = 100
+MAX_OUTPUT = 120
+MAX_FEATURES = 10000
+MAX_DF = 0.85
 
 def split_doc(file_name):
     word_dict = {}
@@ -22,6 +26,34 @@ def split_doc(file_name):
         word_dict[num] = Paragraph(word_dict[num])
     return word_dict
 
+def sort_coo(coo_matrix):
+    tuples = zip(coo_matrix.col, coo_matrix.data)
+    return sorted(tuples, key=lambda x: (x[1], x[0]), reverse=True)
+
+
+def extract_topn_from_vector(feature_names, sorted_items, topn=10):
+    """get the feature names and tf-idf score of top n items"""
+
+    # use only topn items from vector
+    sorted_items = sorted_items[:topn]
+
+    score_vals = []
+    feature_vals = []
+
+    # word index and corresponding tf-idf score
+    for idx, score in sorted_items:
+        # keep track of feature name and its corresponding score
+        score_vals.append(round(score, 3))
+        feature_vals.append(feature_names[idx])
+
+    # create a tuples of feature,score
+    # results = zip(feature_vals,score_vals)
+    results = {}
+    for idx in range(len(feature_vals)):
+        results[feature_vals[idx]] = score_vals[idx]
+
+    return results
+
 if __name__ == '__main__':
     nlp = spacy.load("en_core_web_sm")
     qry = split_doc('../corpus/CISI_dev.QRY')
@@ -32,12 +64,30 @@ if __name__ == '__main__':
         docs.append(qry[q].filtered)
         # print("\n\n\nBody:" + qry[q].body)
         # print("Filtered: ", qry[q].filtered, "\n\n\n")
-        qry[q].generate_vect()
+        # qry[q].generate_vect_uniform()
 
     vec_json_file = open("../results/inv_vector.json", "r")
     tfidf_vect = json.loads(vec_json_file.read())
     vec_json_file.close()
     output_file = open("../results/result.REL", "w+")
+
+    cv = CountVectorizer(max_df=MAX_DF, max_features=MAX_FEATURES)
+    word_count_vector = cv.fit_transform(docs)
+    # print(word_count_vector.shape)
+    keyword_list = list(cv.vocabulary_.keys())
+    # print("\n\nKeywords:", len(keyword_list), "\n", keyword_list)
+
+    tfidf_transformer = TfidfTransformer(smooth_idf=True, use_idf=True)
+    tfidf_transformer.fit(word_count_vector)
+    # print(tfidf_transformer.idf_)
+    tf_idf_vector = tfidf_transformer.transform(cv.transform(docs))
+
+    for i in range(len(docs)):
+        coo_items = sort_coo(tf_idf_vector[i].tocoo())
+        keywords = extract_topn_from_vector(cv.get_feature_names(), coo_items, 200)
+        print("====Paragraph ", str(i), "====")
+        qry[i + 1].generate_vect(keywords)
+
     res_dict = {}
     for qry_idx in range(1, len(qry) + 1):
     # for qry_idx in range(5, 6):
@@ -65,7 +115,7 @@ if __name__ == '__main__':
             max_freq = doc_freq_tuple[1]
             break
         for doc_freq_tuple in sorted_res_dict:
-            if ctr < MAX_OUTPUT and doc_freq_tuple[1] > max_freq * 0.05:
+            if ctr < MAX_OUTPUT:
                 str_to_write = str(qry_idx) + " " + str(doc_freq_tuple[0]) + " " + str(doc_freq_tuple[1]) + "\n"
                 output_file.write(str_to_write)
                 ctr += 1

@@ -34,7 +34,12 @@ class Paragraph:
         self.filtered = " ".join(filtered_sent)
         # bow_vector = CountVectorizer(tokenizer = spacy_tokenizer, ngram_range=(1,1))   bag of words
 
-    def generate_vect(self):
+    def generate_vect(self, keywords):
+        for kwd in keywords:
+            self.qry_vect[kwd] = keywords[kwd]
+
+
+    def generate_vect_uniform(self):
         words = self.filtered.split(" ")
         # print("Filtered: ", self.filtered)
         # max_freq = -1
