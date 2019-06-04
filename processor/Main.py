@@ -5,6 +5,7 @@ import json
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.feature_extraction.text import TfidfTransformer
 from processor.Paragraph import Paragraph
+from collections import Counter
 
 MAX_FEATURES = 10000
 MAX_DF = 0.85
@@ -54,13 +55,14 @@ def extract_topn_from_vector(feature_names, sorted_items, topn=10):
 
 if __name__ == '__main__':
     nlp = spacy.load("en_core_web_sm")
-    paragraphs = split_doc('../corpus/CISI.ALLnettoye')
+    paragraphs = split_doc('../corpus/CISI_small.ALLnettoye')
     docs = []
     for p in paragraphs:
         # print('\n\n*************** Paragraph ' + str(p) + ' ***************')
         paragraphs[p].generate_model()
         paragraphs[p].filter_stop_words()
         docs.append(paragraphs[p].filtered)
+        paragraphs[p].generate_freq()
         # print(paragraphs[p].filtered)
 
     cv = CountVectorizer(max_df=MAX_DF, max_features=MAX_FEATURES)
@@ -77,11 +79,16 @@ if __name__ == '__main__':
     keyword_dict = {}
     for i in range(len(docs)):
         coo_items = sort_coo(tf_idf_vector[i].tocoo())
-        keywords = extract_topn_from_vector(cv.get_feature_names(), coo_items, 100)
+        keywords = extract_topn_from_vector(cv.get_feature_names(), coo_items, 200)
         # print("====Paragraph ", str(i), "====")
+        print(keywords, "\n\n")
         for k in keywords:
-            # print(k, " ", keywords[k])
-            p = (i + 1, keywords[k])
+            if k in paragraphs[i + 1].qry_vect:
+                tf_coeff = paragraphs[i + 1].qry_vect[k]
+            else:
+                tf_coeff = 1
+            p = (i + 1, keywords[k]) #* tf_coeff)
+            # print("p= ", p, "k= ", k, " ", keywords[k])
             if k in keyword_dict.keys():
                 keyword_dict[k].append(p)
             else:
@@ -93,6 +100,6 @@ if __name__ == '__main__':
     idf_dict_str = json.dumps(keyword_dict)
     # print(idf_dict_str)
 
-    my_file = open('../results/inv_vector.json', 'w')
+    my_file = open('../results/inv_vector_small.json', 'w')
     my_file.write(idf_dict_str)
     my_file.close()

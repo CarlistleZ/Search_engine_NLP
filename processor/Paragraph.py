@@ -52,3 +52,13 @@ class Paragraph:
         for vec in self.qry_vect.keys():
             self.qry_vect[vec] = self.qry_vect[vec] / sq
         # print(self.qry_vect)
+
+    def generate_freq(self):
+        words = self.filtered.split(" ")
+        for word in words:
+            if word in self.qry_vect.keys():
+                self.qry_vect[word] += 1
+                # if self.qry_vect[word] > max_freq:
+                #     max_freq = self.qry_vect[word]
+            else:
+                self.qry_vect[word] = 1
