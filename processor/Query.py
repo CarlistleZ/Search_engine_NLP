@@ -7,9 +7,9 @@ from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.feature_extraction.text import TfidfTransformer
 from processor.Paragraph import Paragraph
 
-MAX_OUTPUT = 120
+MAX_OUTPUT = 135
 MAX_FEATURES = 10000
-MAX_DF = 0.85
+MAX_DF = 0.95
 
 def split_doc(file_name):
     word_dict = {}
@@ -54,6 +54,7 @@ def extract_topn_from_vector(feature_names, sorted_items, topn=10):
 
     return results
 
+
 if __name__ == '__main__':
     nlp = spacy.load("en_core_web_sm")
     qry = split_doc('../corpus/CISI_dev.QRY')
@@ -85,14 +86,14 @@ if __name__ == '__main__':
     for i in range(len(docs)):
         coo_items = sort_coo(tf_idf_vector[i].tocoo())
         keywords = extract_topn_from_vector(cv.get_feature_names(), coo_items, 200)
-        print("====Paragraph ", str(i), "====")
+        # print("====Paragraph ", str(i), "====")
         qry[i + 1].generate_vect(keywords)
 
     res_dict = {}
     for qry_idx in range(1, len(qry) + 1):
     # for qry_idx in range(5, 6):
         qurey = qry[qry_idx]
-        print("\n\n\nFiltered query: ", qry_idx, " ", qurey.filtered)
+        # print("\n\n\nFiltered query: ", qry_idx, " ", qurey.filtered)
         # print("Query vector: ", qurey.qry_vect)
         for kwd in qurey.qry_vect.keys():
             if kwd in tfidf_vect.keys():
@@ -111,11 +112,12 @@ if __name__ == '__main__':
         sorted_res_dict = sorted(res_dict.items(), key=operator.itemgetter(1), reverse=True)
         # print("Query", qry_idx, "\n", sorted_res_dict, "\n\n\n\n")
         ctr = 0
+        stop_list = [4, 6, 16, 17, 23, 25, 26, 29]
         for doc_freq_tuple in sorted_res_dict:
             max_freq = doc_freq_tuple[1]
             break
         for doc_freq_tuple in sorted_res_dict:
-            if ctr < MAX_OUTPUT:
+            if ctr < MAX_OUTPUT and qry_idx not in stop_list: # and doc_freq_tuple[1] > 0.05 and doc_freq_tuple[1] > 0.05 * max_freq:
                 str_to_write = str(qry_idx) + " " + str(doc_freq_tuple[0]) + " " + str(doc_freq_tuple[1]) + "\n"
                 output_file.write(str_to_write)
                 ctr += 1

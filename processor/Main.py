@@ -53,9 +53,10 @@ def extract_topn_from_vector(feature_names, sorted_items, topn=10):
 
     return results
 
+
 if __name__ == '__main__':
     nlp = spacy.load("en_core_web_sm")
-    paragraphs = split_doc('../corpus/CISI_small.ALLnettoye')
+    paragraphs = split_doc('../corpus/CISI.ALLnettoye')
     docs = []
     for p in paragraphs:
         # print('\n\n*************** Paragraph ' + str(p) + ' ***************')
@@ -87,7 +88,7 @@ if __name__ == '__main__':
                 tf_coeff = paragraphs[i + 1].qry_vect[k]
             else:
                 tf_coeff = 1
-            p = (i + 1, keywords[k]) #* tf_coeff)
+            p = (i + 1, keywords[k])# * tf_coeff)
             # print("p= ", p, "k= ", k, " ", keywords[k])
             if k in keyword_dict.keys():
                 keyword_dict[k].append(p)
@@ -100,6 +101,6 @@ if __name__ == '__main__':
     idf_dict_str = json.dumps(keyword_dict)
     # print(idf_dict_str)
 
-    my_file = open('../results/inv_vector_small.json', 'w')
+    my_file = open('../results/inv_vector.json', 'w')
     my_file.write(idf_dict_str)
     my_file.close()
