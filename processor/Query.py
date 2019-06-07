@@ -2,9 +2,11 @@
 import json
 import operator
 import spacy
+import pickle
 import re
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.feature_extraction.text import TfidfTransformer
+
 from processor.Paragraph import Paragraph
 
 MAX_OUTPUT = 135
@@ -57,7 +59,7 @@ def extract_topn_from_vector(feature_names, sorted_items, topn=10):
 
 if __name__ == '__main__':
     nlp = spacy.load("en_core_web_sm")
-    qry = split_doc('../corpus/CISI_dev.QRY')
+    qry = split_doc('../corpus/CISI.QRY')
     docs = []
     for q in qry:
         qry[q].generate_model()
@@ -70,18 +72,12 @@ if __name__ == '__main__':
     vec_json_file = open("../results/inv_vector.json", "r")
     tfidf_vect = json.loads(vec_json_file.read())
     vec_json_file.close()
-    output_file = open("../results/result.REL", "w+")
 
-    cv = CountVectorizer(max_df=MAX_DF, max_features=MAX_FEATURES)
-    word_count_vector = cv.fit_transform(docs)
-    # print(word_count_vector.shape)
-    keyword_list = list(cv.vocabulary_.keys())
-    # print("\n\nKeywords:", len(keyword_list), "\n", keyword_list)
-
-    tfidf_transformer = TfidfTransformer(smooth_idf=True, use_idf=True)
-    tfidf_transformer.fit(word_count_vector)
-    # print(tfidf_transformer.idf_)
-    tf_idf_vector = tfidf_transformer.transform(cv.transform(docs))
+    with open('../results/counter.json', 'rb') as counter_file:
+        cv = pickle.load(counter_file)
+    with open('../results/transformer.json', 'rb') as transformer_file:
+        tf_idf_transformer = pickle.load(transformer_file)
+    tf_idf_vector = tf_idf_transformer.transform(cv.transform(docs))
 
     for i in range(len(docs)):
         coo_items = sort_coo(tf_idf_vector[i].tocoo())
@@ -90,6 +86,8 @@ if __name__ == '__main__':
         qry[i + 1].generate_vect(keywords)
 
     res_dict = {}
+    output_file = open("../results/result.REL", "w+")
+    # ref_file = open("../results/reference.REL", "w+")
     for qry_idx in range(1, len(qry) + 1):
     # for qry_idx in range(5, 6):
         qurey = qry[qry_idx]
@@ -112,7 +110,7 @@ if __name__ == '__main__':
         sorted_res_dict = sorted(res_dict.items(), key=operator.itemgetter(1), reverse=True)
         # print("Query", qry_idx, "\n", sorted_res_dict, "\n\n\n\n")
         ctr = 0
-        stop_list = [4, 6, 16, 17, 23, 25, 26, 29]
+        stop_list = [] # [4, 6, 16, 17, 23, 25, 26, 29]
         for doc_freq_tuple in sorted_res_dict:
             max_freq = doc_freq_tuple[1]
             break
@@ -120,10 +118,12 @@ if __name__ == '__main__':
             if ctr < MAX_OUTPUT and qry_idx not in stop_list: # and doc_freq_tuple[1] > 0.05 and doc_freq_tuple[1] > 0.05 * max_freq:
                 str_to_write = str(qry_idx) + " " + str(doc_freq_tuple[0]) + " " + str(doc_freq_tuple[1]) + "\n"
                 output_file.write(str_to_write)
+                ref_file.write(str(qry_idx) + " " + str(doc_freq_tuple[0]) + " 0	0.000000\n")
                 ctr += 1
             else:
                 break
     output_file.close()
+    ref_file.close()
 
 
 

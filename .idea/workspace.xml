@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4ab6dd0b-687d-471e-a69a-cc32b22be087" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/NLP.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/NLP.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/processor/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/processor/Main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/processor/Query.py" beforeDir="false" afterPath="$PROJECT_DIR$/processor/Query.py" afterDir="false" />
@@ -19,106 +21,110 @@
     <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/exportToHTML" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.49582836">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/processor/Main.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="185">
-                  <caret line="55" selection-start-line="55" selection-end-line="55" />
-                  <folding>
-                    <element signature="e#19#31#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/processor/Paragraph.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="645">
-                  <caret line="43" column="44" selection-start-line="43" selection-start-column="44" selection-end-line="43" selection-end-column="44" />
-                  <folding>
-                    <element signature="e#19#30#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/results/result.REL">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-1345">
-                  <caret line="410" column="14" selection-start-line="410" selection-start-column="14" selection-end-line="410" selection-end-column="14" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/corpus/CISI_dev.REL">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="4493">
-                  <caret line="522" column="7" selection-start-line="522" selection-start-column="7" selection-end-line="522" selection-end-column="7" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/processor/exe_eval.sh">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="15">
-                  <caret line="1" selection-start-line="1" selection-end-line="1" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/corpus/CISI.ALLnettoye">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="323">
-                  <caret line="6289" column="6" selection-start-line="6289" selection-start-column="6" selection-end-line="6289" selection-end-column="6" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/corpus/CISI_dev.QRY">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="359">
-                  <caret line="37" column="4" lean-forward="true" selection-start-line="37" selection-start-column="4" selection-end-line="37" selection-end-column="4" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/results/inv_vector.json">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="375">
-                  <caret column="25059" selection-start-column="25059" selection-end-column="25059" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/processor/Query.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="524">
-                  <caret line="117" column="17" lean-forward="true" selection-start-line="117" selection-start-column="17" selection-end-line="117" selection-end-column="17" />
-                  <folding>
-                    <element signature="e#19#30#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/processor/Main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1065">
+              <caret line="78" column="44" selection-start-line="78" selection-start-column="44" selection-end-line="78" selection-end-column="44" />
+              <folding>
+                <element signature="e#19#31#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="240">
+                <caret line="16" column="108" selection-start-line="16" selection-start-column="108" selection-end-line="16" selection-end-column="108" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/processor/Paragraph.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="645">
+              <caret line="43" column="44" lean-forward="true" selection-start-line="43" selection-start-column="44" selection-end-line="43" selection-end-column="44" />
+              <folding>
+                <element signature="e#19#30#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/results/result.REL">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="6150">
+              <caret line="410" column="13" selection-start-line="410" selection-start-column="13" selection-end-line="410" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/corpus/CISI_dev.REL">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="6645">
+              <caret line="443" column="8" selection-start-line="443" selection-start-column="8" selection-end-line="443" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/processor/exe_eval.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="56" selection-start-line="1" selection-start-column="56" selection-end-line="1" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/corpus/CISI.ALLnettoye">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="94335">
+              <caret line="6289" column="6" selection-start-line="6289" selection-start-column="6" selection-end-line="6289" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/corpus/CISI_dev.QRY">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="555">
+              <caret line="37" column="4" selection-start-line="37" selection-start-column="4" selection-end-line="37" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/results/inv_vector.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret column="25059" selection-start-column="25059" selection-end-column="25059" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/processor/Query.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="27" column="30" lean-forward="true" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
+              <folding>
+                <element signature="e#19#30#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -129,7 +135,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>stud</find>
       <find>paragraphs</find>
       <find>MAX_F</find>
       <find>possi</find>
@@ -150,7 +155,6 @@
       <find>37</find>
       <find>Create new doc  41</find>
       <find>tell</find>
-      <find>tell</find>
       <find>spur</find>
       <find>400</find>
       <find>.I 140</find>
@@ -159,6 +163,8 @@
       <find>generate_v</find>
       <find>insignificant</find>
       <find>edition</find>
+      <find>tfidf_vect</find>
+      <find>tf_idf_vector</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -176,16 +182,17 @@
         <option value="$PROJECT_DIR$/corpus/CISI.ALLnettoye" />
         <option value="$PROJECT_DIR$/corpus/CISI_dev.QRY" />
         <option value="$PROJECT_DIR$/processor/Paragraph.py" />
-        <option value="$PROJECT_DIR$/processor/exe_eval.sh" />
         <option value="$PROJECT_DIR$/processor/Main.py" />
+        <option value="$PROJECT_DIR$/processor/exe_eval.sh" />
         <option value="$PROJECT_DIR$/processor/Query.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="12" />
     <option name="y" value="23" />
-    <option name="width" value="1920" />
-    <option name="height" value="986" />
+    <option name="width" value="1440" />
+    <option name="height" value="806" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -195,36 +202,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="NLP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NLP" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NLP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NLP" type="462c0819:PsiDirectoryNode" />
-              <item name="corpus" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NLP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NLP" type="462c0819:PsiDirectoryNode" />
-              <item name="processor" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NLP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NLP" type="462c0819:PsiDirectoryNode" />
-              <item name="results" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NLP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="ProjectPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -232,6 +210,7 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
@@ -373,11 +352,16 @@
       <workItem from="1559654201474" duration="6643000" />
       <workItem from="1559670043964" duration="10260000" />
       <workItem from="1559724272006" duration="2379000" />
+      <workItem from="1559742031586" duration="3678000" />
+      <workItem from="1559745867931" duration="37000" />
+      <workItem from="1559887803911" duration="406000" />
+      <workItem from="1559888345276" duration="5000" />
+      <workItem from="1559938457543" duration="190000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87035000" />
+    <option name="totallyTimeSpent" value="91351000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -390,20 +374,21 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="986" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.106496274" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.11235357" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3283582" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.27095294" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.27062228" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3444317" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.19593614" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3299566" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5005325" side_tool="true" weight="0.32865497" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.3306544" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.20260492" />
       <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.49946752" weight="0.17336395" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
@@ -445,15 +430,15 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/processor/Query.py</url>
-          <line>119</line>
+          <line>113</line>
           <option name="timeStamp" value="26" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/NLP$Query.coverage" NAME="Query Coverage Results" MODIFIED="1559726582749" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/processor" />
-    <SUITE FILE_PATH="coverage/NLP$script__1_.coverage" NAME="script (1) Coverage Results" MODIFIED="1559724814068" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/processor" />
+    <SUITE FILE_PATH="coverage/NLP$Query.coverage" NAME="Query Coverage Results" MODIFIED="1559888144960" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/processor" />
+    <SUITE FILE_PATH="coverage/NLP$script__1_.coverage" NAME="script (1) Coverage Results" MODIFIED="1559745060081" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/processor" />
     <SUITE FILE_PATH="coverage/NLP$script.coverage" NAME="script Coverage Results" MODIFIED="1556088771258" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="debuggerHistoryManager">
@@ -506,13 +491,7 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../Python/lib/python3.6/site-packages/spacy/language.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="372" selection-start-line="372" selection-end-line="372" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../Python/lib/python3.6/site-packages/spacy/language.py" />
     <entry file="file://$PROJECT_DIR$/Paragraph.py" />
     <entry file="file://$PROJECT_DIR$/CISI.ALLnettoye" />
     <entry file="file://$PROJECT_DIR$/CISI_dev.QRY" />
@@ -520,13 +499,7 @@
     <entry file="file://$PROJECT_DIR$/eval.pl" />
     <entry file="file://$PROJECT_DIR$/CISI_small.ALLnettoye" />
     <entry file="file://$PROJECT_DIR$/script.py" />
-    <entry file="file://$PROJECT_DIR$/../Python/lib/python3.6/site-packages/sklearn/feature_extraction/text.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="1030" selection-start-line="1030" selection-end-line="1030" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../Python/lib/python3.6/site-packages/sklearn/feature_extraction/text.py" />
     <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/json/encoder.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-213">
@@ -541,13 +514,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../Python/lib/python3.6/site-packages/scipy/sparse/csr.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="291" selection-start-line="291" selection-end-line="291" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../Python/lib/python3.6/site-packages/scipy/sparse/csr.py" />
     <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/codecs.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="214">
@@ -565,6 +532,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/results/output.REL" />
+    <entry file="file://$PROJECT_DIR$/processor/eval.pl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="33" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/results/count_vec.json" />
+    <entry file="file://$PROJECT_DIR$/../Python/lib/python3.6/site-packages/scipy/sparse/base.py" />
+    <entry file="file://$PROJECT_DIR$/results/reference.REL">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/processor/Main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1065">
+          <caret line="78" column="44" selection-start-line="78" selection-start-column="44" selection-end-line="78" selection-end-column="44" />
+          <folding>
+            <element signature="e#19#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -575,11 +565,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/results/output.REL" />
-    <entry file="file://$PROJECT_DIR$/processor/eval.pl">
+    <entry file="file://$PROJECT_DIR$/results/result.REL">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="33" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
+        <state relative-caret-position="6150">
+          <caret line="410" column="13" selection-start-line="410" selection-start-column="13" selection-end-line="410" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/corpus/CISI_dev.REL">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6645">
+          <caret line="443" column="8" selection-start-line="443" selection-start-column="8" selection-end-line="443" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/processor/exe_eval.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="56" selection-start-line="1" selection-start-column="56" selection-end-line="1" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/corpus/CISI.ALLnettoye">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="94335">
+          <caret line="6289" column="6" selection-start-line="6289" selection-start-column="6" selection-end-line="6289" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/corpus/CISI_dev.QRY">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="37" column="4" selection-start-line="37" selection-start-column="4" selection-end-line="37" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -590,65 +607,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/processor/Paragraph.py">
+    <entry file="file://$PROJECT_DIR$/processor/Query.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="43" column="44" selection-start-line="43" selection-start-column="44" selection-end-line="43" selection-end-column="44" />
+        <state relative-caret-position="285">
+          <caret line="27" column="30" lean-forward="true" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
           <folding>
             <element signature="e#19#30#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/corpus/CISI.ALLnettoye">
+    <entry file="file://$PROJECT_DIR$/processor/Paragraph.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="6289" column="6" selection-start-line="6289" selection-start-column="6" selection-end-line="6289" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/corpus/CISI_dev.QRY">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="37" column="4" lean-forward="true" selection-start-line="37" selection-start-column="4" selection-end-line="37" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/results/result.REL">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1345">
-          <caret line="410" column="14" selection-start-line="410" selection-start-column="14" selection-end-line="410" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/processor/exe_eval.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/corpus/CISI_dev.REL">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4493">
-          <caret line="522" column="7" selection-start-line="522" selection-start-column="7" selection-end-line="522" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/processor/Main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="55" selection-start-line="55" selection-end-line="55" />
-          <folding>
-            <element signature="e#19#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/processor/Query.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="524">
-          <caret line="117" column="17" lean-forward="true" selection-start-line="117" selection-start-column="17" selection-end-line="117" selection-end-column="17" />
+        <state relative-caret-position="645">
+          <caret line="43" column="44" lean-forward="true" selection-start-line="43" selection-start-column="44" selection-end-line="43" selection-end-column="44" />
           <folding>
             <element signature="e#19#30#0" expanded="true" />
           </folding>

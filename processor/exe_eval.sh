@@ -1,2 +1,2 @@
 #!/bin/bash
-./eval.pl ../corpus/CISI_dev.REL ../results/result.REL
+./eval.pl ../results/reference.REL ../results/result.REL

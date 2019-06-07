@@ -2,6 +2,7 @@
 import spacy
 import re
 import json
+import pickle
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.feature_extraction.text import TfidfTransformer
 from processor.Paragraph import Paragraph
@@ -71,10 +72,15 @@ if __name__ == '__main__':
     # print(word_count_vector.shape)
     keyword_list = list(cv.vocabulary_.keys())
     # print("\n\nKeywords:", len(keyword_list), "\n", keyword_list)
+    with open('../results/counter.json', 'wb') as my_file:
+        pickle.dump(cv, my_file)
 
     tfidf_transformer = TfidfTransformer(smooth_idf=True, use_idf=True)
     tfidf_transformer.fit(word_count_vector)
     # print(tfidf_transformer.idf_)
+    with open('../results/transformer.json', 'wb') as my_file:
+        pickle.dump(tfidf_transformer, my_file)
+
     tf_idf_vector = tfidf_transformer.transform(cv.transform(docs))
 
     keyword_dict = {}
@@ -82,7 +88,7 @@ if __name__ == '__main__':
         coo_items = sort_coo(tf_idf_vector[i].tocoo())
         keywords = extract_topn_from_vector(cv.get_feature_names(), coo_items, 200)
         # print("====Paragraph ", str(i), "====")
-        print(keywords, "\n\n")
+        # print(keywords, "\n\n")
         for k in keywords:
             if k in paragraphs[i + 1].qry_vect:
                 tf_coeff = paragraphs[i + 1].qry_vect[k]
